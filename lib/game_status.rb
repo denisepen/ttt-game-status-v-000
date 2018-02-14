@@ -36,3 +36,7 @@ def full?(board)
     position == "X" || position == "O"
   end
 end
+
+def draw?(board)
+  !won? && full?
+end
